@@ -30,7 +30,7 @@ class RestaurantManager {
 
         vector<Restaurant*> searchByloc(string loc) {
             vector<Restaurant*> result;
-            transform(loc.begin(), loc.end(), loc.begin(), ::tolower);
+            //transform(loc.begin(), loc.end(), loc.begin(), ::tolower);
             for (auto& it : restaurants) {
                 if (it->getLocation() == loc) {
                     result.push_back(it);

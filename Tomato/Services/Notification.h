@@ -17,10 +17,10 @@ public:
 
         const vector<MenuItem>& items = order->getItems();
         for (const auto& item : items) {
-            cout << "   - " << item.getName() << " (₹" << item.getPrice() << ")\n";
+            cout << "   - " << item.getName() << " (Rs " << item.getPrice() << ")\n";
         }
 
-        cout << "Total: ₹" << order->getTotal() << endl;
+        cout << "Total: Rs " << order->getTotal() << endl;
         cout << "Scheduled For: " << order->getScheduled() << endl;
         cout << "Payment: Done" << endl;
         cout << "---------------------------------------------" << endl;

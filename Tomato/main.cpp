@@ -12,7 +12,7 @@ int main() {
     cout << "User: " << user->getName() << " is active." << endl;
 
     // User searches for restaurants by location
-    vector<Restaurant*> restaurantList = tomato->searchRestaurant("Delhi");
+    vector<Restaurant*> restaurantList = tomato->searchRestaurant("Chennai");
 
     if (restaurantList.empty()) {
         cout << "No restaurants found!" << endl;
